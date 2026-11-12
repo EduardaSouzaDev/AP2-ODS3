@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loja</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-pagina="loja">
+    <div class="pagina">
+      <header class="navbar" id="navbar"></header>
+
+      <main>
+        <div class="titulo">
+          <h1>Explore produtos</h1>
+          <p>Encontre produtos e compre com segurança utilizando Ethereum.</p>
+        </div>
+
+        <div class="busca">
+          <span>🔍</span>
+          <input type="text" id="busca" placeholder="Buscar produtos..." />
+        </div>
+
+        <div class="produtos" id="lista-produtos"></div>
+      </main>
+    </div>
+
+    <script src="app/navbar.js"></script>
+    <script src="js/loja.js"></script>
+  </body>
+</html>
