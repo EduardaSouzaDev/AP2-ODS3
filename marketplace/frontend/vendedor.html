@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Painel do vendedor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-pagina="vendedor">
+    <div class="pagina">
+      <header class="navbar" id="navbar"></header>
+
+      <main>
+        <div class="titulo">
+          <h1>Painel do vendedor</h1>
+          <p>Gerencie seus produtos e pedidos recebidos.</p>
+        </div>
+
+        <div id="acesso" hidden></div>
+
+        <div id="area-vendedor" hidden>
+          <section class="secao">
+            <h2>Cadastrar produto</h2>
+            <form id="form-produto" novalidate>
+              <div class="campo">
+                <label for="prod-nome">Nome:</label>
+                <input
+                  id="prod-nome"
+                  type="text"
+                  maxlength="80"
+                  placeholder="Ex.: Teclado Mecânico RGB"
+                />
+              </div>
+              <div class="campo">
+                <label for="prod-imagem">URL da imagem:</label>
+                <input id="prod-imagem" type="url" placeholder="https://..." />
+              </div>
+              <div class="campo">
+                <label for="prod-preco">Preço em ETH:</label>
+                <input
+                  id="prod-preco"
+                  type="text"
+                  inputmode="decimal"
+                  placeholder="Ex.: 0.05"
+                />
+              </div>
+              <div class="campo">
+                <label for="prod-estoque">Estoque:</label>
+                <input
+                  id="prod-estoque"
+                  type="number"
+                  min="1"
+                  step="1"
+                  value="1"
+                />
+              </div>
+              <button class="botao auto" type="submit">
+                Cadastrar Produto
+              </button>
+            </form>
+          </section>
+
+          <section class="secao">
+            <h2>Meu saldo no contrato</h2>
+            <div class="linha cartao">
+              <strong id="saldo-contrato">0 ETH</strong>
+              <button class="botao auto" id="btn-sacar" type="button">
+                Sacar saldo
+              </button>
+            </div>
+          </section>
+
+          <section class="secao">
+            <h2>Meus produtos</h2>
+            <div id="meus-produtos"></div>
+          </section>
+
+          <section class="secao">
+            <h2>Pedidos aguardando envio</h2>
+            <div id="pedidos-envio"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@4.16.0/dist/web3.min.js"></script>
+    <script src="app/contrato.js"></script>
+    <script src="app/navbar.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
