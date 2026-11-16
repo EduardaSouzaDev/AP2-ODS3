@@ -362,6 +362,28 @@ select:focus-visible {
   background: #e3f4e8;
   color: var(--verde);
 }
+.aviso { position: relative; padding-right: 36px; }
+.fechar-aviso {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.atualizar-dados { margin: 0 0 16px; }
+.sem-imagem {
+  min-height: 150px;
+  display: grid;
+  place-items: center;
+  color: #555;
+  background: var(--cinza);
+}
+.carteira { overflow-wrap: anywhere; }
+#avisos { max-height: calc(100vh - 40px); overflow-y: auto; }
+button:disabled { cursor: not-allowed; opacity: .6; }
+:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
 .tx {
   position: relative;
   border-left: 6px solid var(--amarelo);
@@ -483,6 +505,8 @@ select:focus-visible {
 
 /* ---------- Celular ---------- */
 @media (max-width: 700px) {
+  body { padding: 10px; }
+  .pagina { max-width: 100%; padding: 12px; }
   .produtos {
     grid-template-columns: 1fr;
   } /* 1 coluna */
@@ -494,6 +518,8 @@ select:focus-visible {
   }
   .navbar {
     padding: 14px 16px;
+    flex-wrap: wrap;
+    gap: 16px;
   }
   .navbar nav {
     gap: 14px;
@@ -502,4 +528,8 @@ select:focus-visible {
   .resumo {
     grid-template-columns: 1fr;
   }
+  .banner, .linha { flex-wrap: wrap; }
+  .busca input { min-width: 0; }
+  .titulo, .secao { margin-left: 0; margin-right: 0; }
+  .cartao { overflow-wrap: anywhere; }
 }

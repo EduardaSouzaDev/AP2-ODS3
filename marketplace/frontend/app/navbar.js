@@ -33,15 +33,10 @@ function desenharNavbar() {
 
   let ladoDireito;
   if (App.conta) {
-    const saldo =
-      App.saldo != null
-        ? `${Number(Web3.utils.fromWei(String(App.saldo), "ether")).toFixed(3)} ETH`
-        : "— ETH";
-    const curto = `${App.conta.slice(0, 5)}...${App.conta.slice(-4)}`;
     ladoDireito = `
       <div class="carteira-area">
         <button class="carteira-menu-botao" id="btn-carteira" aria-haspopup="true" aria-expanded="false">
-          <span class="carteira"><strong>Carteira Ethereum</strong><br>${saldo}<br>${curto}</span>
+          <span class="carteira"><strong>Carteira Sepolia</strong><br><span id="carteira-saldo"></span><br><span id="carteira-endereco"></span></span>
           ${icone}
         </button>
         <div class="menu-carteira" id="menu-carteira" hidden>
@@ -56,6 +51,14 @@ function desenharNavbar() {
 
   document.getElementById("navbar").innerHTML =
     `<nav>${menu}</nav><div class="logo">logo</div>${ladoDireito}`;
+
+  if (App.conta) {
+    document.getElementById("carteira-saldo").textContent =
+      App.saldo != null ? `${App.formatarEth(App.saldo)} ETH` : "— ETH";
+    const endereco = document.getElementById("carteira-endereco");
+    endereco.textContent = App.enderecoCurto(App.conta);
+    endereco.title = App.conta;
+  }
 
   const conectarBtn = document.getElementById("btn-conectar");
   if (conectarBtn)
@@ -82,6 +85,7 @@ function desenharNavbar() {
 document.addEventListener("click", () => {
   const m = document.getElementById("menu-carteira");
   if (m) m.hidden = true;
+  document.getElementById("btn-carteira")?.setAttribute("aria-expanded", "false");
 });
 
 document.addEventListener("app:estado", desenharNavbar);
