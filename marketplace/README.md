@@ -66,15 +66,65 @@ Prepare duas contas de teste com SepoliaETH: A (vendedor) e B (comprador). Para 
 
 Eventos são consultados com `getPastEvents` nos últimos **até 5.000 blocos**, a partir do bloco de deploy configurado, em lotes que diminuem quando o RPC impõe limites. Falha na consulta dos logs é apresentada como indisponibilidade. O estado atual dos pedidos é lido diretamente do contrato, inclusive para pedidos fora dessa janela. Use **Atualizar dados** para buscar alterações feitas por outras contas ou abas; após suas próprias transações, a atualização é automática.
 
-## Verificações automatizadas
+## Testes e Validação
 
-Na raiz do repositório:
+A aplicação CriptoMarket foi estruturada para validação por meio de testes automatizados e testes funcionais manuais, com o objetivo de verificar a integração entre o frontend, a MetaMask e o contrato inteligente na rede Ethereum Sepolia.
+
+### Testes automatizados
+
+Os testes automatizados utilizam o módulo `node:test` do Node.js e simulam interações com a carteira e o contrato inteligente.
+
+Para executá-los, a partir da raiz do repositório:
 
 ```bash
 node --test marketplace/tests/web3.test.cjs
 ```
 
 Os testes usam uma carteira e uma blockchain simuladas; não enviam transações nem comprovam o deploy na Sepolia. A validação final com a extensão MetaMask e o contrato implantado deve seguir o roteiro manual.
+
+### Testes funcionais manuais
+
+Foram definidos 14 casos de teste para verificar os principais fluxos da aplicação, incluindo operações de comprador, vendedor e administrador.
+
+| ID | Caso de teste | Resultado |
+|---|---|---|
+| CT-01 | Conexão com a MetaMask | Aprovado |
+| CT-02 | Detecção e alteração da rede | Aprovado |
+| CT-03 | Cadastro de produto | Aprovado |
+| CT-04 | Compra utilizando ETH | Aprovado |
+| CT-05 | Registro de envio | Aprovado |
+| CT-06 | Confirmação de recebimento | Aprovado |
+| CT-07 | Saque do vendedor | Aprovado |
+| CT-08 | Cancelamento e reembolso | Aprovado |
+| CT-09 | Controle de acesso administrativo | Aprovado |
+| CT-10 | Pausa e retomada do contrato | Não Executado |
+| CT-11 | Rejeição de transação | Aprovado |
+| CT-12 | Troca de conta ou rede | Aprovado |
+| CT-13 | Histórico de eventos | Aprovado |
+| CT-14 | Responsividade da interface | Aprovado |
+
+### Resumo dos resultados
+
+| Indicador | Quantidade |
+|---|---:|
+| Casos planejados | 14 |
+| Aprovados | 13 |
+| Reprovados | 0 |
+| Bloqueados | 0 |
+| Não executados | 1 |
+
+**Status da validação:** Aprovado.
+
+### Documentação e evidências
+
+Os resultados são registrados com o comportamento observado, status de aprovação, capturas de tela e hashes de transações quando aplicáveis. Todos eles podem ser encontrados na pasta `tests`
+
+### Limitações
+
+Os testes automatizados não realizam transações reais na blockchain. Os fluxos administrativos exigem acesso à conta proprietária do contrato ou uma implantação separada para QA.
+
+A conclusão da validação depende da execução dos casos de teste e da análise dos defeitos encontrados.
+
 
 ## Publicação na Vercel
 
