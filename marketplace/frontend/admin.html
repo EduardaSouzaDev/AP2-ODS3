@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Administração</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-pagina="admin">
+    <div class="pagina">
+      <header class="navbar" id="navbar"></header>
+
+      <main>
+        <div class="titulo">
+          <h1>Administração</h1>
+          <p>Área exclusiva do proprietário do contrato.</p>
+        </div>
+
+        <div id="acesso" hidden></div>
+
+        <div id="area-admin" hidden>
+          <section class="secao">
+            <h2>Taxa da Plataforma</h2>
+            <p class="numero-grande" id="taxa-valor">—</p>
+            <p class="dica">
+              A taxa é definida no contrato (TAXA_BPS) e não pode ser alterada
+              por aqui.
+            </p>
+          </section>
+
+          <section class="secao">
+            <h2>Resumo do contrato</h2>
+            <div class="resumo">
+              <div class="cartao">
+                <small>Produtos</small><br /><strong id="total-produtos"
+                  >—</strong
+                >
+              </div>
+              <div class="cartao">
+                <small>Pedidos</small><br /><strong id="total-pedidos"
+                  >—</strong
+                >
+              </div>
+              <div class="cartao">
+                <small>Em custódia</small><br /><strong id="total-custodia"
+                  >—</strong
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="secao">
+            <h2>Pausar contrato</h2>
+            <p class="espaco">
+              Estado atual: <strong id="estado-pausa">—</strong>
+            </p>
+            <button class="botao auto" id="btn-pausa" type="button">
+              Pausar contrato
+            </button>
+          </section>
+
+          <section class="secao">
+            <h2>Resolver disputa</h2>
+            <form id="form-disputa" novalidate>
+              <div class="campo">
+                <label for="disputa-id">Número do pedido:</label>
+                <input
+                  id="disputa-id"
+                  type="number"
+                  min="1"
+                  step="1"
+                  placeholder="Ex.: 1"
+                />
+              </div>
+              <div class="campo">
+                <label for="disputa-favor">Decisão:</label>
+                <select id="disputa-favor">
+                  <option value="comprador">
+                    A favor do comprador (reembolso)
+                  </option>
+                  <option value="vendedor">
+                    A favor do vendedor (libera pagamento)
+                  </option>
+                </select>
+              </div>
+              <button class="botao auto" type="submit">Resolver disputa</button>
+            </form>
+          </section>
+
+          <section class="secao">
+            <h2>Últimos eventos do contrato</h2>
+            <ul class="historico" id="feed-eventos">
+              <li>Carregando…</li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@4.16.0/dist/web3.min.js"></script>
+    <script src="app/contrato.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/navbar.js"></script>
+    <script src="app/admin.js"></script>
+  </body>
+</html>
