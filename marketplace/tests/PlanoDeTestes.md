@@ -340,11 +340,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 - Os eventos `PedidoCancelado` e `Saque` são registrados.
 - A interface não apresenta o reembolso como transferido antes do saque.
 
-**Resultado observado:** [Preencher]
-
-**Status:** Não executado
-
-**Hashes:** [Preencher]
+**Status:** Aprovado
 
 **Evidência:** `evidencias/CT08-reembolso.png` ![alt text](evidencias/CT08-reembolso.png)
 
