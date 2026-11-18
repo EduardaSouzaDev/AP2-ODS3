@@ -416,9 +416,9 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 - A retomada restabelece as operações.
 - O evento `PausaAlterada` é emitido.
 
-**Status:** Não executado
+**Status:** Aprovado
 
-**Evidência:** salvar em `evidencias/CT10-pausa.[png ou mp4]`
+**Evidência:** `evidencias/CT10-pausa.png` ![alt text](prints/CT10-pausa.png)
 
 ---
 
@@ -601,10 +601,10 @@ A validação será considerada concluída quando:
 | Indicador | Quantidade |
 |---|---|
 | Casos planejados | 14 |
-| Aprovados | 13 |
+| Aprovados | 14 |
 | Reprovados | 0 |
 | Bloqueados | 0 |
-| Não executados | 1 |
+| Não executados | 0 |
 
 **Situação atual:** Nenhum bug detectado e a aplicação se comporta conforme esperado
 
