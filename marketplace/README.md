@@ -47,10 +47,10 @@ Marketplace descentralizado com pagamento em custódia (escrow) na Ethereum Sepo
 
 | Integrante | Papel | Principais contribuições |
 |---|---|---|
-| **[PREENCHER: Vinícius Souza Costa]** | Desenvolvedor(a) do contrato | Modelagem, `contracts/MeuDApp.sol`, testes no Remix, deploy e verificação na Sepolia |
-| **[PREENCHER: Eduarda Souza]** | Desenvolvedor(a) frontend | HTML, CSS, layout e identidade visual |
-| **[PREENCHER: Lucas Lima Carioca]** | Integração Web3 | Web3.js, conexão com a MetaMask, chamadas, transações e eventos |
-| **[PREENCHER: Oziel Bezerra de Lima]** | Documentação e QA | README, plano de testes, evidências, vídeo e apresentação |
+| **[Vinícius Souza Costa]** | Desenvolvedor(a) do contrato | Modelagem, `contracts/MeuDApp.sol`, testes no Remix, deploy e verificação na Sepolia |
+| **[Eduarda Souza]** | Desenvolvedor(a) frontend | HTML, CSS, layout e identidade visual |
+| **[Lucas Lima Carioca]** | Integração Web3 | Web3.js, conexão com a MetaMask, chamadas, transações e eventos |
+| **[Oziel Bezerra de Lima]** | Documentação e QA | README, plano de testes, evidências, vídeo e apresentação |
 
 ---
 
