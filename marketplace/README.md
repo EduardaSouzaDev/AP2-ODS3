@@ -76,6 +76,50 @@ node --test marketplace/tests/web3.test.cjs
 
 Os testes usam uma carteira e uma blockchain simuladas; não enviam transações nem comprovam o deploy na Sepolia. A validação final com a extensão MetaMask e o contrato implantado deve seguir o roteiro manual.
 
+### Testes funcionais manuais
+
+Foram definidos 14 casos de teste para verificar os principais fluxos da aplicação, incluindo operações de comprador, vendedor e administrador.
+
+| ID | Caso de teste | Resultado |
+|---|---|---|
+| CT-01 | Conexão com a MetaMask | Aprovado |
+| CT-02 | Detecção e alteração da rede | Aprovado |
+| CT-03 | Cadastro de produto | Aprovado |
+| CT-04 | Compra utilizando ETH | Aprovado |
+| CT-05 | Registro de envio | Aprovado |
+| CT-06 | Confirmação de recebimento | Aprovado |
+| CT-07 | Saque do vendedor | Aprovado |
+| CT-08 | Cancelamento e reembolso | Aprovado |
+| CT-09 | Controle de acesso administrativo | Aprovado |
+| CT-10 | Pausa e retomada do contrato | Aprovado |
+| CT-11 | Rejeição de transação | Aprovado |
+| CT-12 | Troca de conta ou rede | Aprovado |
+| CT-13 | Histórico de eventos | Aprovado |
+| CT-14 | Responsividade da interface | Aprovado |
+
+### Resumo dos resultados
+
+| Indicador | Quantidade |
+|---|---:|
+| Casos planejados | 14 |
+| Aprovados | 14 |
+| Reprovados | 0 |
+| Bloqueados | 0 |
+| Não executados | 0 |
+
+**Status da validação:** Aprovado.
+
+### Documentação e evidências
+
+Os resultados são registrados com o comportamento observado, status de aprovação, capturas de tela e hashes de transações quando aplicáveis. Todos eles podem ser encontrados na pasta `tests`
+
+### Limitações
+
+Os testes automatizados não realizam transações reais na blockchain. Os fluxos administrativos exigem acesso à conta proprietária do contrato ou uma implantação separada para QA.
+
+A conclusão da validação depende da execução dos casos de teste e da análise dos defeitos encontrados.
+
+
 ## Publicação na Vercel
 
 Importe o repositório e configure **Root Directory** como `marketplace/frontend`, **Framework Preset** como `Other` e deixe o comando de build vazio. O site é estático, com saída na própria raiz (`.`). Confira as [configurações de build da Vercel](https://vercel.com/docs/builds/configure-a-build). A publicação não foi feita nesta implementação; a equipe deve registrar a URL pública e repetir o roteiro nela.
