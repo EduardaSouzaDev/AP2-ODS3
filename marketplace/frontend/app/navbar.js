@@ -50,7 +50,7 @@ function desenharNavbar() {
   }
 
   document.getElementById("navbar").innerHTML =
-    `<nav>${menu}</nav><div class="logo">logo</div>${ladoDireito}`;
+    `<nav>${menu}</nav><div class="logo"><img src="../assets/logo.jpeg" alt="Logo"></div>${ladoDireito}`;
 
   if (App.conta) {
     document.getElementById("carteira-saldo").textContent =

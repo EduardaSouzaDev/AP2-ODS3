@@ -82,7 +82,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT01-conectar_conta.png` ![alt text](prints/CT01-conectar_conta.png)
+**Evidência:** `evidencias/CT01-conectar_conta.png` ![alt text](evidencias/CT01-conectar_conta.png)
 
 ---
 
@@ -116,7 +116,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT02-rede.png` ![alt text](prints/CT02-rede.png)
+**Evidência:** `evidencias/CT02-rede.png` ![alt text](evidencias/CT02-rede.png)
 
 ---
 
@@ -155,7 +155,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT03-cadastro.png` ![alt text](prints/CT03-cadastro.png)
+**Evidência:** `evidencias/CT03-cadastro.png` ![alt text](evidencias/CT03-cadastro.png)
 
 ---
 
@@ -196,7 +196,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT04-compra.png` ![alt text](prints/CT04-compra.png)
+**Evidência:** `evidencias/CT04-compra.png` ![alt text](evidencias/CT04-compra.png)
 
 ---
 
@@ -231,7 +231,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT05-envio.png` ![alt text](prints/CT05-envio.png)
+**Evidência:** `evidencias/CT05-envio.png` ![alt text](evidencias/CT05-envio.png)
 
 ---
 
@@ -267,7 +267,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT06-entrega.png` ![alt text](prints/CT06-entrega.png)
+**Evidência:** `evidencias/CT06-entrega.png` ![alt text](evidencias/CT06-entrega.png)
 
 ---
 
@@ -304,7 +304,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT07-saque.png` ![alt text](prints/CT07-saque.png)
+**Evidência:** `evidencias/CT07-saque.png` ![marketplace/tests/evidencias/CT07-saque.png](evidencias/CT07-saque.png)
 
 ---
 
@@ -342,7 +342,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT08-reembolso.png` ![alt text](prints/CT08-reembolso.png)
+**Evidência:** `evidencias/CT08-reembolso.png` ![alt text](evidencias/CT08-reembolso.png)
 
 ---
 
@@ -378,7 +378,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT09-admin.png` ![alt text](prints/CT09-admin.png)
+**Evidência:** `evidencias/CT09-admin.png` ![alt text](evidencias/CT09-admin.png)
 
 ---
 
@@ -418,7 +418,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT10-pausa.png` ![alt text](prints/CT10-pausa.png)
+**Evidência:** `evidencias/CT10-pausa.png` ![alt text](prints/CT10-pausa.png)
 
 ---
 
@@ -452,7 +452,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT11-rejeicao.png` ![alt text](prints/CT11-rejeicao.png)
+**Evidência:** `evidencias/CT11-rejeicao.png` ![alt text](evidencias/CT11-rejeicao.png)
 
 ---
 
@@ -490,7 +490,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT12-troca.mp4` <video controls src="prints/CT12-troca.mp4" title="Title"></video>
+**Evidência:** `evidencias/CT12-troca.mp4` <video controls src="evidencias/CT12-troca.mp4" title="Title"></video>
 
 ---
 
@@ -527,7 +527,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT13-eventos.png` ![alt text](prints/CT13-eventos.png)
+**Evidência:** `evidencias/CT13-eventos.png` ![alt text](evidencias/CT13-eventos.png)
 
 ---
 
@@ -566,7 +566,7 @@ Os valores podem ser adaptados conforme o saldo disponível e as restrições da
 
 **Status:** Aprovado
 
-**Evidência:** `prints/CT14-responsividade.png` ![alt text](prints/CT14-responsividade.png)
+**Evidência:** `evidencias/CT14-responsividade.png` ![alt text](evidencias/CT14-responsividade.png)
 
 ---
 
@@ -601,10 +601,10 @@ A validação será considerada concluída quando:
 | Indicador | Quantidade |
 |---|---|
 | Casos planejados | 14 |
-| Aprovados | 13 |
+| Aprovados | 14 |
 | Reprovados | 0 |
 | Bloqueados | 0 |
-| Não executados | 1 |
+| Não executados | 0 |
 
 **Situação atual:** Nenhum bug detectado e a aplicação se comporta conforme esperado
 
