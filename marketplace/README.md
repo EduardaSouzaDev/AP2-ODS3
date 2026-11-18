@@ -97,7 +97,7 @@ Foram definidos 14 casos de teste para verificar os principais fluxos da aplica�
 | CT-07 | Saque do vendedor | Aprovado |
 | CT-08 | Cancelamento e reembolso | Aprovado |
 | CT-09 | Controle de acesso administrativo | Aprovado |
-| CT-10 | Pausa e retomada do contrato | Não Executado |
+| CT-10 | Pausa e retomada do contrato | Aprovado |
 | CT-11 | Rejeição de transação | Aprovado |
 | CT-12 | Troca de conta ou rede | Aprovado |
 | CT-13 | Histórico de eventos | Aprovado |
@@ -108,10 +108,10 @@ Foram definidos 14 casos de teste para verificar os principais fluxos da aplica�
 | Indicador | Quantidade |
 |---|---:|
 | Casos planejados | 14 |
-| Aprovados | 13 |
+| Aprovados | 14 |
 | Reprovados | 0 |
 | Bloqueados | 0 |
-| Não executados | 1 |
+| Não executados | 0 |
 
 **Status da validação:** Aprovado.
 
